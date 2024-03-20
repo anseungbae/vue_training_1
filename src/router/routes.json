@@ -1,0 +1,168 @@
+[
+  {
+    "path": "/member",
+    "component": "/layout/BasicLayout.vue",
+    "name": "Member",
+    "meta": {
+      "title": "회원",
+      "alwaysShow": true
+    },
+    "children": [
+      {
+        "path": "memberMgnt",
+        "fullPath": "/member/memberMgnt",
+        "component": "/views/member/MemberManagement.vue",
+        "name": "MemberManagement",
+        "meta": {
+          "title": "회원 관리",
+          "icon": "cib:telegram-plane"
+        }
+      },
+      {
+        "path": "memberRestMgnt",
+        "fullPath": "/member/memberRestMgnt",
+        "component": "/views/memberRest/MemberRestManagement.vue",
+        "name": "MemberRestManagement",
+        "meta": {
+          "title": "휴면 회원 관리",
+          "icon": "cib:telegram-plane"
+        }
+      }
+    ]
+  },
+  {
+    "path": "/site",
+    "component": "/layout/BasicLayout.vue",
+    "name": "Site",
+    "meta": {
+      "title": "사이트 운영",
+      "alwaysShow": true
+    },
+    "children": [
+      {
+        "path": "notice",
+        "fullPath": "/site/notice",
+        "component": "/views/notice/NoticeManagement.vue",
+        "name": "NoticeManagement",
+        "meta": {
+          "title": "공지사항 관리",
+          "icon": "cib:telegram-plane",
+          "canTo": false
+        }
+      },
+      {
+        "path": "popup",
+        "fullPath": "/site/popup",
+        "component": "/views/popupManage/PopupManagement.vue",
+        "name": "PopupManagement",
+        "meta": {
+          "title": "팝업 관리",
+          "icon": "cib:telegram-plane"
+        }
+      },
+      {
+        "path": "terms",
+        "fullPath": "/site/terms",
+        "component": "/views/terms/TermsManagement.vue",
+        "name": "TermsManagement",
+        "meta": {
+          "title": "약관관리",
+          "icon": "cib:telegram-plane"
+        }
+      },
+      {
+        "path": "accessRoleManage",
+        "fullPath": "/site/accessRoleManage",
+        "component": "/views/accessRoleManage/AccessRoleManagement.vue",
+        "name": "AccessRoleManagement",
+        "meta": {
+          "title": "접근권한 관리",
+          "icon": "cib:telegram-plane"
+        }
+      },
+      {
+        "path": "codeManage",
+        "fullPath": "/site/codeManage",
+        "component": "/views/codeManage/CodeManagement.vue",
+        "name": "CodeManagement",
+        "meta": {
+          "title": "공통코드 관리",
+          "icon": "cib:telegram-plane"
+        }
+      },
+      {
+        "path": "bannerLoginManage",
+        "fullPath": "/site/bannerLoginManage",
+        "component": "/views/bannerLoginManage/bannerLoginManagement.vue",
+        "name": "bannerLoginManagement",
+        "meta": {
+          "title": "로그인배너 관리",
+          "icon": "cib:telegram-plane"
+        }
+      }
+    ]
+  },
+  {
+    "path": "/menurole",
+    "component": "/layout/BasicLayout.vue",
+    "name": "menurole",
+    "meta": {
+      "title": "메뉴 관리",
+      "alwaysShow": true
+    },
+    "children": [
+      {
+        "path": "menu",
+        "fullPath": "/menurole/menu",
+        "component": "/views/menuRoleManage/menuRoleManage.vue",
+        "name": "menuRoleManage",
+        "meta": {
+          "title": "메뉴",
+          "icon": "cib:telegram-plane",
+          "canTo": false
+        }
+      },
+      {
+        "path": "page",
+        "fullPath": "/menurole/page",
+        "component": "/views/pageManage/pageManage.vue",
+        "name": "pageManage",
+        "meta": {
+          "title": "페이지 관리",
+          "icon": "cib:telegram-plane"
+        }
+      }
+    ]
+  },
+  {
+    "path": "/sample",
+    "component": "/layout/BasicLayout.vue",
+    "name": "Sample",
+    "meta": {
+      "title": "예제",
+      "alwaysShow": true
+    },
+    "children": [
+      {
+        "path": "example",
+        "fullPath": "/sample/example",
+        "component": "/views/guide/ExamplePage.vue",
+        "name": "ExamplePage",
+        "meta": {
+          "title": "Example",
+          "icon": "cib:telegram-plane"
+        }
+      },
+      {
+        "path": "chart",
+        "fullPath": "/sample/chart",
+        "component": "/views/chart/chartPage.vue",
+        "name": "ChartPage",
+        "meta": {
+          "title": "Chart",
+          "icon": "cib:telegram-plane"
+        }
+      }
+    ]
+  }
+]

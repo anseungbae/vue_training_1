@@ -1,0 +1,352 @@
+/********* 기본 *********/
+/** 버튼 **/
+// 기본
+.basic-button {
+  background-color: #0055d4;
+  color: white;
+  height: 30px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18.82px;
+  border-radius: 6;
+  &:hover {
+    background-color: #16389e;
+    color: white;
+  }
+}
+// 조회 버튼
+.searchbox-button {
+  background-color: #0055d4;
+  color: white;
+  height: 30px;
+  width: 80px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18.82px;
+  border-radius: 6;
+  &:hover {
+    background-color: #16389e;
+    color: white;
+  }
+}
+// 그리드 버튼
+.grid-button {
+  background-color: #0055d4;
+  color: white;
+  height: 24px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18.82px;
+  border-radius: 6;
+  &:hover {
+    background-color: #16389e;
+    color: white;
+  }
+}
+// 그리드 내 렌더러 버튼
+.grid-render-button {
+  background-color: #0055d4;
+  color: white;
+  height: 24px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18.82px;
+  border-radius: 6;
+  margin-bottom: 5px;
+  &:hover {
+    background-color: #16389e;
+    color: white;
+  }
+}
+// 비활성화 버튼
+.gray-basic-button {
+  background-color: #dce1ea;
+  color: #0055d4;
+  height: 24px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18.82px;
+  border-radius: 6;
+  &:hover {
+    background-color: #bec7e5;
+    color: #16389e;
+  }
+}
+
+/** 폰트 **/
+// 기본 폰트
+.basic-font {
+  font-weight: 400;
+  font-size: 12px;
+  color: #292929;
+  line-height: 1;
+}
+
+// 서브타이틀 폰트
+.subtitle-font {
+  margin: auto 0;
+  color: #203c69;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+// 표 형식창에서 텍스트인 경우 폰트와 높이
+.input-text-font {
+  height: 42px;
+  color: #292929;
+  font-size: 12px;
+  line-height: 1;
+}
+
+// checkbox
+.checkbox-font {
+  color: #545454;
+  font-size: 12px;
+}
+.menu-alin-left {
+  text-align: left;
+}
+/********* 조회 *********/
+// 조회 전체 틀
+.searchbox-box {
+  padding: 10px 20px;
+  min-width: 1200px;
+  background-color: white;
+  border: 1px solid #dee0e7;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17.38px;
+}
+// 조회 라벨과 내용 틀
+.searchbox-box > div:first-child {
+  width: 90%;
+}
+// 조회 버튼 틀
+.searchbox-box > div:last-child {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+// 조회 라벨
+.search-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 6px;
+  color: #314462;
+}
+// 조회 내용
+.search-content {
+  padding-right: 20px;
+}
+
+/********* 그리드 *********/
+// 그리드 전체 틀
+.grid-box {
+  background-color: white;
+  border: 1px solid #dee0e7;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17.38px;
+}
+// 그리드 상위(텍스트와 버튼 동시에 있는 경우)
+.grid-header-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+  background-color: #f6faff;
+  max-height: 44px;
+  height: 44px;
+  box-shadow: inset 0 -3px 10px 0 rgba(19, 23, 33, 0.05);
+}
+// 그리드 상위(버튼만 있는 경우)
+.grid-header-box-end {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 20px;
+  background-color: #f6faff;
+  max-height: 44px;
+  height: 44px;
+  box-shadow: inset 0 -3px 10px 0 rgba(19, 23, 33, 0.05);
+}
+// 그리드 상위에 버튼
+.button-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+// 그리드 상위에 버튼 2개 이상 사이
+.button-box > el-button + .button-box > el-button {
+  margin-left: 5px;
+}
+// 데이터그리드 풀사이즈(메인)
+.data-grid-large-box {
+  display: flex;
+  padding: 10px 20px 10px;
+  height: 100%;
+}
+
+// 데이터그리드 팝업창 작은 크기
+.data-grid-small-box {
+  padding: 18px 18px 20px;
+  margin-top: 10px;
+  height: 168px;
+  min-height: 120px;
+}
+
+/********* 페이징 *********/
+// 상위 페이징 스타일
+.header-pagination {
+  display: flex;
+  padding: 15px 20px 0px;
+}
+// 하위 페이징 스타일
+.footer-pagination {
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+// 페이징 전체수
+.total-page-label {
+  margin: auto 0;
+  margin-right: 5px;
+  padding-top: 15px;
+  color: #292929;
+  font-size: 12px;
+}
+// 페이징 범위 수
+.current-pagerange-label {
+  margin: auto 0;
+  padding-top: 15px;
+  color: #278eed;
+  font-size: 12px;
+}
+
+/********* 표 형식으로 만든 *********/
+// 폰트 & border(마지막 하단 줄만 border있음)
+.row-box {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17.38px;
+  border: 1px solid #dee0e7;
+  border-bottom: none;
+  &:last-child {
+    border-bottom: 1px solid #dee0e7;
+  }
+}
+// input 라벨 box
+.input-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #f0f6ff;
+  color: #203c69;
+  align-items: center;
+  padding: 0 7px;
+  border-right: 1px solid #dee0e7;
+  border-left: 1px solid #dee0e7;
+  &:first-child {
+    border-left: none;
+  }
+  &:last-child {
+    border-right: none;
+  }
+}
+// input 내용 Box
+.input-content {
+  display: flex;
+  align-items: center;
+  padding: 5px 9px;
+}
+
+// input 내용
+.input-and-input {
+  margin-right: 8px;
+  max-width: 150px;
+}
+
+/********* 모달 *********/
+// 모달 틀
+.modal-box {
+  padding-bottom: 50px;
+}
+// 모달
+.modal-title {
+  word-wrap: break-word;
+  color: #535353;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 0;
+}
+// 큰 사이즈 팝업
+.modal-large {
+  min-width: 1200px;
+  min-height: 700px;
+}
+// 중간 사이즈
+.modal-mid {
+  min-width: 1200px;
+  min-height: 500px;
+}
+// 작음 사이즈 팝업
+.modal-small {
+  min-width: 900px;
+  min-height: 295px;
+}
+
+/********* 2개 그리드 틀 *********/
+// 그
+.width20-left {
+  margin: 20px 0px 0px;
+  margin-right: 20px;
+  width: 20%;
+}
+.width80-right {
+  margin: 20px 0px 0px;
+  min-width: 500px;
+  width: 80%;
+}
+.width30-left {
+  margin: 20px 0px 0px;
+  margin-right: 20px;
+  width: 30%;
+}
+.width70-right {
+  margin: 20px 0px 0px;
+  min-width: 500px;
+  width: 70%;
+}
+.margin-width30-left {
+  margin: 0px 0px 0px;
+  margin-right: 20px;
+  width: 30%;
+}
+.margin-width70-right {
+  margin: 0px 0px 0px;
+  min-width: 500px;
+  width: 70%;
+}
+.margin-width100 {
+  margin: 0px 0px 0px;
+  min-width: 800px;
+  width: 100%;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 0px;
+  padding: 0em;
+  border: 0px solid #f81739;
+}
+.line_form {
+  width: 100%;
+  border-bottom: 0px solid #e4e5eb;
+  border-top: 1px solid #e4e5eb;
+}

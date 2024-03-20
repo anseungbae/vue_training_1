@@ -1,0 +1,11 @@
+<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#gmown07nua)">
+        <path d="M1 11.27V15c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3.73" stroke="#939393" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1v9.61L5.16 7.77a.996.996 0 1 0-1.41 1.41l4.55 4.55c.39.39 1.02.39 1.41 0l4.55-4.55a.996.996 0 1 0-1.41-1.41l-2.84 2.84V1c0-.55-.45-1-1-1s-1 .45-1 1H8z" fill="#939393"/>
+    </g>
+    <defs>
+        <clipPath id="gmown07nua">
+            <path fill="#fff" d="M0 0h18v18H0z"/>
+        </clipPath>
+    </defs>
+</svg>

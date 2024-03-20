@@ -1,0 +1,1 @@
+import{g as o,p as e}from"./index-DvlLjNFd.js";const t="admin/terms",n=t+"/termsDetail",r=t+"/list",c=t+"/create",T=t+"/modify",m=t+"/terms-info",R=t+"/version-up",_=s=>o(n,s),i=s=>e(r,s),E=s=>e(c,s),S=s=>e(T,s),L=s=>o(m,s),U=s=>e(R,s),a={getTermsDetail:_,getTermsList:i,createTerms:E,modifyTerms:S,getTermsInfo:L,versionUpTerms:U},p=a;export{p as T};
