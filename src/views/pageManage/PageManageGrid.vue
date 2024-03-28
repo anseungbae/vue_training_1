@@ -1,10 +1,9 @@
 <template>
-  <div class="grid-box">
+  <div class="grid-box flex flex-col flex-1 mt-5 h-full min-w-[1200px]">
     <div class="grid-header-box">
       <p class="menu-alin-left">페이지 관리</p>
       <div class="button-box">
         <el-button class="basic-button" @click="addRow">등록</el-button>
-        <el-button class="basic-button" @click="onUpdateEditRequest">저장</el-button>
       </div>
     </div>
     <div class="data-grid-large-box">
@@ -44,13 +43,12 @@ const pageGridProps = defineProps({
     default: null
   }
 })
-
 // grid data set
-const gridItems = ref()
-const gridApi = ref()
+const gridItems = ref(null)
+const gridApi = ref(null)
 
 // old grid data set
-const oriGridItems = ref()
+const oriGridItems = ref(null)
 
 //  Grid 컬럼 정의 시작
 const colDefs = ref([
@@ -138,12 +136,13 @@ watch(
 // grid click event
 const onGridCellClick = (event: any) => {
   if (event.colDefs.field === 'pageName') {
-    PageManageDetailPopRef.value.open(event.data.id)
+    PageManageDetailPopRef.value.pageOpen(event.data.id)
   }
 }
-// onGridReady : 그리드가 초기화되어 대부분의 API 호출에 사용할 준비가 되었지만
-//               아직 완전히 렌더링되지 않아 세부정보를 준비해준다.
-//               세부정보 숨기기
+//  onGridReady :
+// 그리드가 초기화되어 대부분의 API 호출에 사용할 준비가 되었지만
+//  아직 완전히 렌더링되지 않아 세부정보를 준비해준다.
+//  세부정보 숨기기
 const onGridReady = (params: any) => {
   gridApi.value = params.api
 }

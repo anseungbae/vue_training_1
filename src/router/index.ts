@@ -108,6 +108,17 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
           icon: 'cib:telegram-plane',
           canTo: false
         }
+      },
+      {
+        path: 'holiday',
+        fullPath: '/site/holiday',
+        component: () => import('../views/holidayManage/HolidayManage.vue'),
+        name: 'holidayManage',
+        meta: {
+          title: '휴무 관리',
+          icon: 'cib:telegram-plane',
+          canTo: false
+        }
       }
     ]
   },
@@ -152,30 +163,40 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
         }
       }
     ]
+  },
+  {
+    path: '/menurole',
+    component: SidebarLayout,
+    name: 'menurole',
+    meta: {
+      title: '메뉴 관리',
+      alwaysShow: true
+    },
+    children: [
+      {
+        path: 'menu',
+        fullPath: '/menurole/menu',
+        component: () => import('../views/menuRoleManage/menuRoleManage.vue'),
+        name: 'menuRoleManage',
+        meta: {
+          title: '메뉴',
+          icon: 'cib:telegram-plane',
+          canTo: false
+        }
+      },
+      {
+        path: 'page',
+        fullPath: '/menurole/page',
+        component: () => import('../views/pageManage/pageManage.vue'),
+        name: 'pageManage',
+        meta: {
+          title: '페이지',
+          icon: 'cib:telegram-plane',
+          canTo: false
+        }
+      }
+    ]
   }
-  // ,
-  // {
-  //   path: '/menurole',
-  //   component: SidebarLayout,
-  //   name: 'menurole',
-  //   meta: {
-  //     title: '메뉴 관리',
-  //     alwaysShow: true
-  //   },
-  //   children: [
-  //     {
-  //       path: 'menu',
-  //       fullPath: '/menurole/menu',
-  //       component: () => import('../views/menuRoleManage/menuRoleManage.vue'),
-  //       name: 'menuRoleManage',
-  //       meta: {
-  //         title: '메뉴',
-  //         icon: 'cib:telegram-plane',
-  //         canTo: false
-  //       }
-  //     }
-  //   ]
-  // }
 ]
 export const constantRouterMap: AppRouteRecordRaw[] = [
   {

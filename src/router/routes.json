@@ -91,6 +91,16 @@
         }
       },
       {
+        "path": "holiday",
+        "fullPath": "/site/holiday",
+        "component": "/views/holidayManage/HolidayManage.vue",
+        "name": "HolidayManage",
+        "meta": {
+          "title": "휴무 관리",
+          "icon": "cib:telegram-plane"
+        }
+      },
+      {
         "path": "bannerLoginManage",
         "fullPath": "/site/bannerLoginManage",
         "component": "/views/bannerLoginManage/bannerLoginManagement.vue",

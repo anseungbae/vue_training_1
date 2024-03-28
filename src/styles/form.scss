@@ -275,6 +275,9 @@
 .modal-box {
   padding-bottom: 50px;
 }
+.modal-box-bottom {
+  padding-bottom: 20px;
+}
 // 모달
 .modal-title {
   word-wrap: break-word;
@@ -349,4 +352,85 @@
   width: 100%;
   border-bottom: 0px solid #e4e5eb;
   border-top: 1px solid #e4e5eb;
+}
+
+.demo-tabs > .el-tabs__content {
+  padding: 32px;
+  color: #6b778c;
+  font-size: 32px;
+  font-weight: 600;
+}
+.demo-tabs .custom-tabs-label .el-icon {
+  vertical-align: middle;
+}
+.demo-tabs .custom-tabs-label span {
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.el-calendar__body {
+  padding: 4px 20px 35px;
+}
+:deep .el-calendar-table thead th {
+  color: #ffab11;
+  font-weight: bold;
+  font-size: 25px;
+}
+.tag {
+  display: flex;
+  align-items: center;
+  height: 2.5vh;
+  justify-content: center;
+}
+.tag2 {
+  display: flex;
+  align-items: center;
+  height: 2.5vh;
+  justify-content: center;
+  font-size: 18px;
+}
+.aaa .is-selected .yuyue {
+  color: #ffab11;
+}
+.aaa .datastyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #353636;
+  font-weight: 600;
+}
+:deep .el-calendar-table .el-calendar-day:hover {
+  background-color: #faecd8;
+}
+:deep .el-calendar {
+  --el-calendar-selected-bg-color: #faecd8;
+}
+.aaa .is-selected .datastyle {
+  color: #ffab11;
+}
+.aaa .prev .datastyle {
+  color: #c4c5c8;
+}
+.aaa .next .datastyle {
+  color: #c4c5c8;
+}
+:deep .el-calendar {
+  --el-calendar-cell-width: 130px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffab11;
+  margin-left: 5px;
+  font-size: 20px;
+}
+:deep .el-calendar__header {
+  justify-content: center;
 }

@@ -53,14 +53,6 @@
           @change="changeImage"
           style="display: none"
         />
-        <!-- <el-upload
-                class="upload-demo"
-                action=""
-                :on-success="handlePreview"
-  
-              >
-                <el-button type="primary">파일 설정</el-button>
-              </el-upload> -->
       </el-row>
       <el-row class="row-box">
         <el-col :span="6" class="input-label"> Link 주소</el-col>
@@ -205,7 +197,7 @@ const getUsePayGridItems = computed(() => {
 
 /** 기능 **/
 //넘어온 사용자 EmailId 설정
-const open = (userId: any) => {
+const pageOpen = (userId: any) => {
   if (userId) {
     console.log('1111111111111')
     pkUserId.value = userId
@@ -335,86 +327,8 @@ const changeImage = (e) => {
 }
 
 defineExpose({
-  open
+  pageOpen
 }) //Popup Open
 </script>
 
-<style lang="scss" scoped>
-.row-box {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 17.38px;
-  border: 1px solid #dee0e7;
-  border-bottom: none;
-  &:last-child {
-    border-bottom: 1px solid #dee0e7;
-  }
-}
-.basic-button {
-  background-color: #0055d4;
-  color: white;
-  height: 30px;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18.82px;
-  &:hover {
-    background-color: #16389e;
-    color: white;
-  }
-}
-.gray-basic-button {
-  background-color: #dce1ea;
-  color: #0055d4;
-  height: 30px;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18.82px;
-  &:hover {
-    background-color: #bec7e5;
-    color: #16389e;
-  }
-}
-.input-label {
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  background-color: #f6f9fe;
-}
-.input-content {
-  display: flex;
-  align-items: center;
-  padding: 5px 10px;
-}
-.grid-box {
-  background-color: white;
-  border: 1px solid #dee0e7;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 17.38px;
-}
-.between-box {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #f3f4fb;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.11);
-}
-.button-box {
-  display: flex;
-  justify-content: flex-end;
-}
-.ag-grid-box {
-  margin: 15px 20px;
-}
-.subtitle-font {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20.27px;
-  margin: 10px 0;
-}
-.basic-font {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 17.38px;
-}
-</style>
+<style lang="scss" scoped></style>
